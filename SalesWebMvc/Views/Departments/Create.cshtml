@@ -2,14 +2,13 @@
 @{
     ViewData["Title"] = "Create";
 }
+<h2>@ViewData["Title"]</h2>
 
-<h2>Create</h2>
-
-<div class="card">
-    <div class="card-body">
-        <h4 class="card-title">Department</h4>
-        <hr />
-        <form asp-action="Create" class="needs-validation" novalidate>
+<h4>Department</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label">Name</label>
