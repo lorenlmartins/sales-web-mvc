@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace SalesWebMvc.Models
+namespace SalesWebMvc.Models;
+
+public class SalesWebMvcContext(DbContextOptions<SalesWebMvcContext> options) : DbContext(options)
 {
-    public class SalesWebMvcContext : DbContext
-    {
-        public SalesWebMvcContext (DbContextOptions<SalesWebMvcContext> options)
-            : base(options)
-        {
-        }
-
-        public DbSet<SalesWebMvc.Models.Department> Department { get; set; } = default!;
-    }
+    public DbSet<Department> Department { get; set; } = default!;
 }
