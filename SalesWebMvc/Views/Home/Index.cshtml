@@ -8,18 +8,17 @@
             <div class="container">
                 <h1 class="display-4">SalesWebMvc</h1>
                 <p class="lead text-muted">Effortlessly manage your sales with our streamlined platform.</p>
-                <a href="@Url.Action("Index", "SalesRecords")" class="btn btn-primary btn-lg mx-2">View Sales Records</a>
-                <a href="@Url.Action("Create", "Sellers")" class="btn btn-outline-secondary btn-lg mx-2">Add New Seller</a>
+                <a href="@Url.Action("Index", "SalesRecords")" class="btn btn-primary btn-lg">View Sales Records</a>
             </div>
         </section>
 
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
                         <h5 class="card-title text-primary"><i class="bi bi-diagram-3-fill"></i> Departments</h5>
-                        <p class="card-text text-muted">Efficiently manage all your departments and track their sales.</p>
-                        <a href="@Url.Action("Index", "Departments")" class="btn btn-primary">View Departments</a>
+                        <p class="card-text text-muted">Manage all your departments and track their sales.</p>
+                        <a href="@Url.Action("Index", "Departments")" class="btn btn-outline-primary">View Departments</a>
                     </div>
                 </div>
             </div>
@@ -27,17 +26,8 @@
                 <div class="card border-0 shadow-sm mb-4">
                     <div class="card-body">
                         <h5 class="card-title text-primary"><i class="bi bi-people-fill"></i> Sellers</h5>
-                        <p class="card-text text-muted">Monitor your sellers' performance and add new sellers effortlessly.</p>
-                        <a href="@Url.Action("Index", "Sellers")" class="btn btn-primary">View Sellers</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 shadow-sm mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title text-primary"><i class="bi bi-bar-chart-fill"></i> Sales Records</h5>
-                        <p class="card-text text-muted">Analyze detailed sales records and track business performance.</p>
-                        <a href="@Url.Action("Index", "SalesRecords")" class="btn btn-primary">View Sales Records</a>
+                        <p class="card-text text-muted">Monitor your sellers' performance and add new sellers.</p>
+                        <a href="@Url.Action("Index", "Sellers")" class="btn btn-outline-primary">View Sellers</a>
                     </div>
                 </div>
             </div>
